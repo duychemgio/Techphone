@@ -1,0 +1,102 @@
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.product-list {
+  flex: 1;
+}
+
+.product-detail {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.product-list .datatable {
+  cursor: pointer;
+}
+
+.product-list .datatable .table-header-cell,
+.product-list .datatable .table-cell {
+  background-color: #f7f7f7;
+}
+
+.product-list .datatable .table-cell:hover {
+  background-color: #e2e2e2;
+}
+
+.product-list .datatable .table-cell:hover img {
+  transform: scale(1.1);
+}
+
+.product-list .datatable .table-cell img {
+  max-width: 100px;
+  max-height: 100px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-list .datatable .table-cell .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-list .datatable .table-cell .image:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.product-list .datatable .table-cell .image img {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.product-list .datatable .table-cell .image:hover {
+  opacity: 0.7;
+}
+
+.product-list .datatable .table-cell .image:hover img {
+  transform: scale(1.1);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.datatable {
+  cursor: pointer;
+  background-color: #f9f9f9; /* Màu nền của bảng */
+}
+
+.datatable th {
+  background-color: #c03b3b; /* Màu nền của các ô tiêu đề */
+  color: #333; /* Màu chữ của các ô tiêu đề */
+}
+
+.datatable td {
+  background-color: #fff; /* Màu nền của các ô dữ liệu */
+  color: #555; /* Màu chữ của các ô dữ liệu */
+}
+
+.datatable tr:hover {
+  background-color: #f5f5f5; /* Màu nền khi hover vào hàng */
+}
+.skeleton-row {
+  animation: skeleton-animation 1.2s infinite linear;
+}
+
+@keyframes skeleton-animation {
+  0% {
+    background-color: #f2f2f2; /* Màu nền của skeleton */
+  }
+  50% {
+    background-color: #e0e0e0; /* Màu nền của skeleton */
+  }
+  100% {
+    background-color: #f2f2f2; /* Màu nền của skeleton */
+  }
+}
